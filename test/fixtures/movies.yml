@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cast: MyString
+  ratings: MyString
+  trailer: MyString
+  current_gross_sales: 1.5
+
+two:
+  name: MyString
+  cast: MyString
+  ratings: MyString
+  trailer: MyString
+  current_gross_sales: 1.5

@@ -1,0 +1,8 @@
+<%= form_for @user do |f| %>
+  if @user.errors.any?
+  <div id = "error_explanation">
+    <h2>There were some errors:</h2>
+      <ul>
+        @user.errors
+      </ul>
+  </div>
