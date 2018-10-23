@@ -1,8 +1,23 @@
 <%= form_for @user do |f| %>
-  if @user.errors.any?
-  <div id = "error_explanation">
-    <h2>There were some errors:</h2>
-      <ul>
-        @user.errors
-      </ul>
+  <% if @user.errors.any? %>
+    <div id = "error_explanation">
+      <h2>There were some errors:</h2>
+        <ul>
+          <% @user.errors.full_messages.each do |message| %>
+          <%= message  %>
+          <% end %>
+
+        </ul>
+    </div>
+    
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :points %>
+    <%= f.text_field :points %>
+    <div class = "actions">
+      <%= f.submit %>
+    </div>
   </div>
