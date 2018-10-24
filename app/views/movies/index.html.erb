@@ -14,11 +14,11 @@
   <% @movies.each do |movie|  %>
   <div>
   <a href= <%= movie_path(movie) %> >
-  <img src= <%= movie.poster %> alt="Movie" style="width:120px;height:120px;border:0;">
+  <img src= <%= movie.poster %> alt="Movie" style="width:200px;height:225px;border:4;">
 </a>
   <ul>
-    <li><%= movie.name %>
-    <li><%= movie.ratings %>
+    <h4><%= movie.name %></h4>
+    <h4><%= movie.ratings %> Stars</h4>
   </ul>
   </div>
   <% end  %>
