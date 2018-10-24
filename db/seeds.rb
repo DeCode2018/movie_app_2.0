@@ -1,10 +1,10 @@
 
 # ------------- User Data-----------------------
 user_1 = User.create(name: 'User One', username: 'Username1', password: 'password', points: 100)
-user_2 = User.create(name: 'User Two', username: 'Username2', password: 'password', points: 200)
-user_3 = User.create(name: 'User Three', username: 'Username3', password: 'password', points: 300)
-user_4 = User.create(name: 'User Four', username: 'Username4', password: 'password', points: 400)
-user_5 = User.create(name: 'User Five', username: 'Username5', password: 'password', points: 500)
+user_2 = User.create(name: 'User Two', username: 'Username2', password: 'password2', points: 200)
+user_3 = User.create(name: 'User Three', username: 'Username3', password: 'password3', points: 300)
+user_4 = User.create(name: 'User Four', username: 'Username4', password: 'password4', points: 400)
+user_5 = User.create(name: 'User Five', username: 'Username5', password: 'password5', points: 500)
 #----------------------------------------------
 
 #---------------- Movie Theater Data -----------
@@ -14,10 +14,10 @@ movie_theater_3 = MovieTheater.create(name: 'Muvico D.C', address: '345 Muvico S
 #----------------------------------------------
 #----------------- Showtimes ------------------
 showtime_1 = Showtime.create(day: 'Friday', time: '7:00pm')
-showtime_2 = Showtime.create(day: 'Friday', time: '8:00pm')
+showtime_2 = Showtime.create(day: 'Tuesday', time: '8:00pm')
 showtime_3 = Showtime.create(day: 'Friday', time: '9:00pm')
-showtime_4 = Showtime.create(day: 'Friday', time: '10:00pm')
-showtime_5 = Showtime.create(day: 'Friday', time: '11:00pm')
+showtime_4 = Showtime.create(day: 'Monday', time: '10:00pm')
+showtime_5 = Showtime.create(day: 'Monday', time: '11:00pm')
 #----------------------------------------------
 #---------------------Movies-------------------
 movie_1 = Movie.create(name: 'La La Land', cast:'actor 1', ratings: '5', poster: 'https://i.imgur.com/po7UezG.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 1000)
