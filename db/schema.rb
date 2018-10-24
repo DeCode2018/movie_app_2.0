@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 2018_10_24_140144) do
   create_table "movie_theaters", force: :cascade do |t|
     t.string "name"
     t.string "address"
+    t.integer "total_seats"
+    t.integer "seats_available"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,18 +32,24 @@ ActiveRecord::Schema.define(version: 2018_10_24_140144) do
   end
 
   create_table "showtimes", force: :cascade do |t|
+    t.integer "movie_theater_id"
+    t.integer "movie_id"
     t.string "day"
     t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_showtimes_on_movie_id"
+    t.index ["movie_theater_id"], name: "index_showtimes_on_movie_theater_id"
   end
 
   create_table "tickets", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "showtime_id"
     t.float "price"
-    t.integer "total_tickets"
-    t.integer "tickets_available"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["showtime_id"], name: "index_tickets_on_showtime_id"
+    t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

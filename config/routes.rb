@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     get 'users/new'
     post 'users', to: "users#create"
     get "/", to: "session#new"
+    get "/buy_ticket", to: "users#buy_ticket"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

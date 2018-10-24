@@ -8,9 +8,9 @@ user_5 = User.create(username: 'Username5', password: 'password5', points: 100)
 #----------------------------------------------
 
 #---------------- Movie Theater Data -----------
-movie_theater_1 = MovieTheater.create(name: 'Regal Cinemas D.C', address: '123 Regal Way, Washington, D.C. 12345')
-movie_theater_2 = MovieTheater.create(name: 'Landmark Theaters D.C', address: '234 Landmark blvd, Washington, D.C. 23456')
-movie_theater_3 = MovieTheater.create(name: 'Muvico D.C', address: '345 Muvico Street, Washington, D.C. 34567')
+movie_theater_1 = MovieTheater.create(name: 'Regal Cinemas D.C', address: '123 Regal Way, Washington, D.C. 12345', total_seats: 100, seats_available: 100)
+movie_theater_2 = MovieTheater.create(name: 'Landmark Theaters D.C', address: '234 Landmark blvd, Washington, D.C. 23456',total_seats: 100, seats_available: 100)
+movie_theater_3 = MovieTheater.create(name: 'Muvico D.C', address: '345 Muvico Street, Washington, D.C. 34567',total_seats: 100, seats_available: 100)
 #----------------------------------------------
 #----------------- Showtimes ------------------
 showtime_1 = Showtime.create(day: 'Friday', time: '7:00pm')
@@ -27,9 +27,9 @@ movie_4 = Movie.create(name: 'Movie4', cast:'actor 1', ratings: '2', trailer: "T
 movie_5 = Movie.create(name: 'Movie5', cast:'actor 1', ratings: '1', trailer: "Trailer 5: replace with link to trailer", current_gross_sales: 5000)
 #----------------------------------------------
 #--------------------Tickets-------------------
-ticket1 = Ticket.create(price:12.99, total_tickets: 100, tickets_available: 100)
-ticket2 = Ticket.create(price:13.99, total_tickets: 100, tickets_available: 100)
-ticket3 = Ticket.create(price:14.99, total_tickets: 200, tickets_available: 200)
-ticket4 = Ticket.create(price:15.99, total_tickets: 100, tickets_available: 100)
-ticket5 = Ticket.create(price:16.99, total_tickets: 300, tickets_available: 300)
+ticket1 = Ticket.create(price:12.99)
+ticket2 = Ticket.create(price:13.99)
+ticket3 = Ticket.create(price:14.99)
+ticket4 = Ticket.create(price:15.99)
+ticket5 = Ticket.create(price:16.99)
 #----------------------------------------------
