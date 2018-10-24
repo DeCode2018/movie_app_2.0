@@ -5,6 +5,7 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.string :cast
       t.string :ratings
       t.string :trailer
+      t.string :poster
       t.float :current_gross_sales
 
       t.timestamps
