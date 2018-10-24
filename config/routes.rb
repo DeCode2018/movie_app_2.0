@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :genres
   resources :tickets
   resources :movies
   resources :showtimes
