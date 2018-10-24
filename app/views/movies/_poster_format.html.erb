@@ -1,0 +1,20 @@
+ <!-- How many posters we want to have in each row and column -->
+<!--cols = 3, rows = 3  -->
+
+
+    <!-- Movie object with title, rating, and poster -->
+
+    <!-- Call action when user taps on a poster -->
+
+  <%= render %>
+    <%= if MOVIE { movie, movie:  [:title, :rating, :poster] == self.props %>
+    <%= return %>
+      <ClickableOpacity style={styles.container} onClick={() => onOpen(movie)}>
+        <View style={styles.imageContainer}>
+          <img source={{ url: poster }} style={styles.image} />
+        </View>
+        <div style={styles.title} numberOfLines={1}>{title}</div>
+        <div style={styles.genre} numberOfLines={1}>{rating}</div>
+      </ClickableOpacity>
+    <% end %>
+  <% end %>
