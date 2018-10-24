@@ -1,0 +1,17 @@
+<h1 id = "welcome">WELCOME TO MOVIE APP</h1>
+<h2>LOGIN</h2>
+<div class="error"> <%= flash.notice %></div>
+
+<%= form_tag "/login" do %>
+
+    <%= text_field_tag :username %><br />
+    <%= label :username, "Username" %><br />
+
+    <%= password_field_tag :password %><br />
+    <%= label :password, "Password" %><br />
+    <%= submit_tag "Login" %>
+<% end %>
+
+<div id="root_page_footer">
+    <%= link_to "create new user", users_new_path %>
+</div>
