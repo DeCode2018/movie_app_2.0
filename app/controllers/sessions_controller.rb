@@ -9,10 +9,11 @@ class SessionsController < ApplicationController
     # find the user
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
+
         # store user id as a session variable
         session[:user_id] = @user.id
         # load the index page for that user
-        redirect_to snacks_path
+        redirect_to users_path
     else
         flash[:notice] = "No username/password found.  Try again."
         render :login

@@ -1,14 +1,14 @@
-<h1>Create a user</h1>
+<h1>CREATE A USER</h1>
 
 <% if @user.errors.any? %>
     <%= render partial: "shared/error_list", locals: {object: @user} %>
 <% end %>
 
 <%= form_for @user do |f| %>
-    <%= f.text_field :username %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= f.text_field :username %><br />
+    <%= f.label :username %><br />
+    <%= f.password_field :password %><br />
+    <%= f.label :password %><br />
+
     <%= f.submit %>
 <% end %>

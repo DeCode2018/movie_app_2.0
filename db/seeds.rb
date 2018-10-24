@@ -1,10 +1,10 @@
 
 # ------------- User Data-----------------------
-user_1 = User.create(username: 'Username1', password_digest: 'password1', points: 100)
-user_2 = User.create(username: 'Username2', password_digest: 'password2', points: 100)
-user_3 = User.create(username: 'Username3', password_digest: 'password3', points: 100)
-user_4 = User.create(username: 'Username4', password_digest: 'password4', points: 100)
-user_5 = User.create(username: 'Username5', password_digest: 'password5', points: 100)
+user_1 = User.create(username: 'Username1', password: 'password1', points: 100)
+user_2 = User.create(username: 'Username2', password: 'password2', points: 100)
+user_3 = User.create(username: 'Username3', password: 'password3', points: 100)
+user_4 = User.create(username: 'Username4', password: 'password4', points: 100)
+user_5 = User.create(username: 'Username5', password: 'password5', points: 100)
 #----------------------------------------------
 
 #---------------- Movie Theater Data -----------
