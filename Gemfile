@@ -60,3 +60,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bootstrap', '~> 4.1.3'
+ #Ensure that sprockets-rails is at least v2.3.2.
+gem 'sprockets-rails'
+ #Bootstrap JavaScript depends on jQuery. If you're using Rails 5.1+
+gem 'jquery-rails'
