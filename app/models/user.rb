@@ -11,7 +11,9 @@ class User < ApplicationRecord
 
 
 
-    def buy_ticket(seats_available, points)
+    def buy_ticket(showtime)
+      movie_theater = Showtime.theater
+
       if seats_available > 0
           points+=100
           seats_available-=1
