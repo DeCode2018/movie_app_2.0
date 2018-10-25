@@ -1,0 +1,9 @@
+<h1>All Theaters in the World</h1>
+
+
+
+  <% @movie_theaters.each do |theater|  %>
+  <div>
+    <h3><%= link_to theater.name, movie_theater_path(theater) %></h3>
+  </div>
+  <% end  %>

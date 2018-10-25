@@ -1,0 +1,9 @@
+<h1>All Showtimes</h1>
+
+
+
+  <% @showtimes.each do |showtime|  %>
+  <div>
+  <%= link_to showtime.movie_time, showtime_path(showtime) %>
+  </div>
+  <% end  %>
