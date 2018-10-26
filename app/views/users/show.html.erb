@@ -1,3 +1,8 @@
-<%= link_to @user.username, user_path(@user) %>
+<%= stylesheet_link_tag :showtimes %>
 <%= @user.username %>
-<%= @user.points %>
+<%= @user.points %> Points
+
+<% @user.showtimes.each do |showtime| %>
+<p>Showtime: <%= showtime.movie_time %></p>
+<p>$<%= showtime.ticket_cost %></p>
+<% end %>

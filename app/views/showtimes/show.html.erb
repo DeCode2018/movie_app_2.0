@@ -4,4 +4,6 @@
 <ul>
 <p><%= @showtime.movie_time %></p>
 <p>Price: $<%= @showtime.ticket_cost %></p>
+<!-- <a class="btn btn-primary" href="" role="button">Buy Ticket</a> -->
+<%= link_to "Buy Ticket", "/showtimes/#{@showtime.id}/buy" %>
 </ul>
