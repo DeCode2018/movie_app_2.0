@@ -4,5 +4,7 @@
   <h3><%= @movie.ratings %> Stars</li>
   <h3><%= @movie.cast %> </h3>
   <h3>Current Gross Sales: <%= @movie.current_gross_sales %> </h3>
-  <h3><%= @movie.trailer %>  </h3>
+
+  <h3><%= link_to "Trailer", "#{@movie.trailer}" %></h3>
+ <!-- <h3> <a class="btn btn-primary" href="#{<%= @movie.trailer %>}" role="button">Trailer</a> </h3> -->
 </ul>

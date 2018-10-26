@@ -24,12 +24,12 @@ showtime_5 = Showtime.create(ticket_cost: 11.99, movie_time:DateTime.new(2018, 1
 
 #----------------------------------------------
 #---------------------Movies-------------------
-movie_1 = Movie.create(name: 'La La Land', cast:'actor 1', ratings: '5', poster: 'https://i.imgur.com/po7UezG.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 1000)
-movie_2 = Movie.create(name: 'Paterson', cast:'actor 1', ratings: '3', poster: 'https://i.imgur.com/pE0C9E0.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 555)
-movie_3 = Movie.create(name: 'Jackie', cast:'actor 1', ratings: '1', poster: 'https://i.imgur.com/VqUi1sw.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 777)
-movie_4 = Movie.create(name: 'Lo and Behold Reveries of the Connected World', cast:'actor 1', ratings: '5', poster: 'https://i.imgur.com/s106X7S.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 1000)
-movie_5 = Movie.create(name: '10 Cloverfield Lane', cast:'actor 1', ratings: '4', poster: 'https://i.imgur.com/kV2BVdH.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 1100)
-movie_6 = Movie.create(name: 'Birth of a Nation', cast:'actor 1', ratings: '4', poster: 'https://i.imgur.com/a6HJj8S.jpg', trailer: "Trailer 1: replace with link to trailer", current_gross_sales: 5000)
+movie_1 = Movie.create(name: 'La La Land', cast:'Ryan Gosling, Emma Stone', ratings: '5', poster: 'https://i.imgur.com/po7UezG.jpg', trailer: "https://www.youtube.com/watch?v=0pdqf4P9MB8", current_gross_sales: 1000)
+movie_2 = Movie.create(name: 'Paterson', cast:'Adam Driver, Golshifteh Farahani, Nellie', ratings: '3', poster: 'https://i.imgur.com/pE0C9E0.jpg', trailer: "https://www.youtube.com/watch?v=m8pGJBgiiDU", current_gross_sales: 555)
+movie_3 = Movie.create(name: 'Jackie', cast:'Natalie Portman', ratings: '1', poster: 'https://i.imgur.com/VqUi1sw.jpg', trailer: "https://www.youtube.com/watch?v=g9pW3B8Ycc4", current_gross_sales: 777)
+movie_4 = Movie.create(name: 'Lo and Behold Reveries of the Connected World', cast:'Elon Musk', ratings: '5', poster: 'https://i.imgur.com/s106X7S.jpg', trailer: "https://www.youtube.com/watch?v=Zc1tZ8JsZvg", current_gross_sales: 1000)
+movie_5 = Movie.create(name: '10 Cloverfield Lane', cast:'John Goodman, Mary Elizabeth Winstead', ratings: '4', poster: 'https://i.imgur.com/kV2BVdH.jpg', trailer: "https://www.youtube.com/watch?v=yQy-ANhnUpE", current_gross_sales: 1100)
+movie_7 = Movie.create(name: 'Birth of a Nation', cast:'Nate Parker, Armie Hammer, Penelope Ann Miller', ratings: '3', poster: 'https://i.imgur.com/a6HJj8S.jpg', trailer: "https://www.youtube.com/watch?v=i18z1EQCoyg", current_gross_sales: 5000)
 #----------------------------------------------
 
 
