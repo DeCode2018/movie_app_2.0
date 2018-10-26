@@ -12,8 +12,8 @@ class SessionsController < ApplicationController
 
         # store user id as a session variable
         session[:user_id] = @user.id
-        # load the index page for that user
-        redirect_to users_path
+        # load the movies page for that user
+        redirect_to movies_path
     else
         flash[:notice] = "No username/password found.  Try again."
         render :login

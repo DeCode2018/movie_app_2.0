@@ -34,7 +34,7 @@ class MoviesController < ApplicationController
 
   def top_rated
     @sorted_list = Movie.all.sort_by {|movie| movie.ratings}
-    
+    @sorted_list_reverse = @sorted_list.reverse!
   end
 
   def destroy

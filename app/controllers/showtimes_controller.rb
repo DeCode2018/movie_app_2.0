@@ -17,6 +17,16 @@ class ShowtimesController < ApplicationController
     redirect_to showtimes_url
   end
 
+  def buy
+    @user = current_user
+    @showtime = Showtime.find(params[:id])
+    #this is the area for the buy method
+
+    ShowtimeUser.create(user: @user, showtime: @showtime)
+
+    redirect_to user_path(@user)
+  end
+
   private
 
   def showtime_params

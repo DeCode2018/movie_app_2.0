@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     get "/", to: "session#new"
     get "/buy_ticket", to: "users#buy_ticket"
     get "/top_rated", to: "movies#top_rated"
+    get 'showtimes/:id/buy', :to => 'showtimes#buy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
