@@ -1,3 +1,28 @@
 // Place all the styles related to the Movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  // background: red;
+  padding-top: 70px;
+  background: #eee;
+  text-align: center;
+
+}
+
+.navbar {
+  moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  box-shadow:rgba(0, 0, 0, 0.09) 0 2px 0;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 20px;
+  color: #dd5638
+}
+
+.navbar-right {
+  margin-right: 0;
+}

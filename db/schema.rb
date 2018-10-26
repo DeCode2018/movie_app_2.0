@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-
-ActiveRecord::Schema.define(version: 2018_10_24_225701) do
-
+ActiveRecord::Schema.define(version: 2018_10_26_144741) do
 
   create_table "movie_theaters", force: :cascade do |t|
     t.string "name"
@@ -35,6 +32,13 @@ ActiveRecord::Schema.define(version: 2018_10_24_225701) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "showtime_users", force: :cascade do |t|
+    t.integer "showtime_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "showtimes", force: :cascade do |t|
     t.integer "movie_theater_id"
     t.integer "movie_id"
@@ -44,11 +48,6 @@ ActiveRecord::Schema.define(version: 2018_10_24_225701) do
     t.datetime "updated_at", null: false
     t.index ["movie_id"], name: "index_showtimes_on_movie_id"
     t.index ["movie_theater_id"], name: "index_showtimes_on_movie_theater_id"
-  end
-
-  create_table "showtimes_users", id: false, force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "showtime_id", null: false
   end
 
   create_table "users", force: :cascade do |t|
