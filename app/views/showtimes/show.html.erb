@@ -1,4 +1,7 @@
+<%= stylesheet_link_tag :showtimes %>
+
+<h1>Showtime Day & Price </h1>
 <ul>
-<%= @showtime.movie_time %>
-<%= @showtime.ticket_cost %>
+<p><%= @showtime.movie_time %></p>
+<p>Price: $<%= @showtime.ticket_cost %></p>
 </ul>

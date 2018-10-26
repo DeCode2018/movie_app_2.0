@@ -32,6 +32,11 @@ class MoviesController < ApplicationController
     end
   end
 
+  def top_rated
+    @sorted_list = Movie.all.sort_by {|movie| movie.ratings}
+    
+  end
+
   def destroy
     @movie.destroy
     redirect_to movies_path(@movie)
@@ -46,4 +51,5 @@ class MoviesController < ApplicationController
   def find_movie
     @movie = Movie.find(params[:id])
   end
+
 end
