@@ -1,4 +1,6 @@
+<%= stylesheet_link_tag :movies %>
 <h1>All Movies Listed Here!</h1>
+
 <!--
 
  @index = 0
@@ -11,6 +13,36 @@
 
 <div class="container">
   @movies.slice(0,3) -->
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Movie Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand text-uppercase" href="#">My Movies</a>
+    </div>
+
+<!-- Navbar Header -->
+
+<div class="collapse navbar-collapse" id="navbar-collapse">
+  <div class="nav navbar-right navbar-btn">
+    <a href="form.html" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>View Showtimes</a>
+  </div>
+</div>
+</div>
+</nav>
+
+
+
+
   <% @movies.each do |movie|  %>
   <div>
   <a href= <%= movie_path(movie) %> >

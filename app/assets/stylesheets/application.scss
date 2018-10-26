@@ -13,19 +13,5 @@
 
 
  */
- @import "bootstrap";
- body{
- background: url("background2.jpg");
- background-size: 100%;
- color: black;
- text-align: center;
- }
- label{
-   color: black;
- }
 
- #welcome{
-   border-style: solid;
-   background-color: white;
-   color:black;
- }
+ @import "bootstrap";
