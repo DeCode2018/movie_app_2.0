@@ -20,7 +20,7 @@ class UsersController < ApplicationController
      if @user.valid?
        @user.save
        session[:user_id] = @user.id
-       redirect_to users_path
+       redirect_to movies_path
      else
        render :new
      end
@@ -37,6 +37,10 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     redirect_to users_url
+  end
+
+  def buy
+    Hi from UsersController buy method
   end
 
   private

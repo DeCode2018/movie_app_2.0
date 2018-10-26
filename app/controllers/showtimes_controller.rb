@@ -17,6 +17,12 @@ class ShowtimesController < ApplicationController
     redirect_to showtimes_url
   end
 
+    def buy
+      #this is the area for the buy method...make sure to leave the redirect
+
+      redirect_to user_path(@current_user)
+  end
+
   private
 
   def showtime_params

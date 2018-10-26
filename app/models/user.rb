@@ -11,21 +11,5 @@ class User < ApplicationRecord
 
 
 
-    def buy_ticket(showtime)
-      movie_theater = Showtime.theater
-
-      if seats_available > 0
-          points+=100
-          seats_available-=1
-          puts points
-          puts seats_available
-
-      else
-        return "tickets sold out"
-      end
-    end
-
-    def current_points(points)
-
-    end
+    
 end
